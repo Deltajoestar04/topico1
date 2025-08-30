@@ -10,7 +10,7 @@ class Alumno {
         this.apellido = apellido;
         this.correo = correo;
     }
-    
+
 
     obtenerNombreCompleto() {
         return `${this.nombre} ${this.apellido}`;
@@ -49,8 +49,8 @@ return {
     };
 })();
 
-const alumno1 = new Alumno("Ana", "Pérez", "ana.perez@email.com");
-const alumno2 = new Alumno("Luis", "García", "luis.garcia@email.com");
+const alumno1 = new Alumno("Ana", "Pérez", "ana.perez@gmail.com");
+const alumno2 = new Alumno("Luis", "García", "luis.garciagemail.com");
 
 ModuloAlumnos.ingresarAlumno(alumno1);
 ModuloAlumnos.ingresarAlumno(alumno2);
@@ -59,6 +59,6 @@ ModuloAlumnos.listarAlumnos();
 
 ModuloAlumnos.enviarCorreoID(alumno1);
 
-ModuloAlumnos.darDeBajaAlumno("luis.garcia@email.com");
+ModuloAlumnos.darDeBajaAlumno("luis.garcia@gmail.com");
 
 ModuloAlumnos.listarAlumnos();
